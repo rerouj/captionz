@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>{{titre}}</title>
+  
+  
+  
+  <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" type="text/css">
+
+  
+</head>
+
+<body>
+  <table class="main_frame" align="center" width="600px" margin-top="0px">
+  <td>
+    <table width="600px">
+      <td>
+        <div id="title">
+          <h1><a href="https://captionz.herokuapp.com/"><img src="/static/img/caption_logo.png"></a></h1>
+          <p id="title_sub">captionz.herokuapp.com</p>
+        </div>
+      </td>
+      <td><div id="coin" align="center"><a href="{{link}}" target="_blank">Caption it!</a></div></td>
+    </table>
+	<div id="main_content">
+    <p id="big_title">{{titre}}</p>
+		<table>
+			<td>
+				<div id="how_div">
+					<h2>legal</h2>
+          <p id="privacy_titles">Captionz! for Instagram’s Privacy Policy</p>
+					<p id="privacy"> Captionz! for Instagram is a web app providing registered users of Instagram to obtain basic insight about their Instagram </br>
+          This Privacy Policy describes how and when Captionz! for Instagram collects, uses and shares your information when you use our Services. Captionz! for Instagram receives your information through ourapplication. For example, you send us information when you use the Captionz! website. When using our Service you consent to the collection, transfer, manipulation, storage, disclosure and other uses of your information as described in this Privacy Policy. Irrespective of which country you reside in or supply information from, you authorize Captionz! for Instagram to use your information in Hong Kong and any other country where Captionz! for Instagram operates.</br>
+          If you have any questions or comments about this Privacy Policy, please contact us at info@tannhauser.ch. </p>
+          <p id="privacy_titles">Information Collection and Use</p>
+          <p id="privacy">We collect and use your information below to provide our Services and to measure and improve our Services from time to time.
+          </p>
+          <p id="privacy_titles">Basic, public content, likes: </p>
+          <p id="privacy">Our app is primarily designed to help you have insight about your writings on Instagram. Most of the information you provide us is information you are asking us to make public. This includes not only your captions but also the public information from your photos or videos (likes). We may use this information to customize the content we show you, including advertisements or our promotions, and to improve our app functions.
+          </p>
+          <p id="privacy_titles">Information Sharing and Disclosure</p>
+          <p id="privacy">We do not disclose your private personal information except in the limited circumstances described here.
+          </p>
+          <p id="privacy_titles">Your Consent:</p>
+          <p id="privacy">We may share or disclose your information at your direction, such as when you authorize a third-party web client or application to access your Captionz! for Instagram account.
+          </p>
+          <p id="privacy_titles">Law and Harm:</p>
+          <p id="privacy">Notwithstanding anything to the contrary in this Policy, we may preserve or disclose your information if we believe that it is reasonably necessary to comply with a law, regulation or legal request; to protect the safety of any person; to address fraud, security or technical issues; or to protect Captionz! for Instagram's rights or property. However, nothing in this Privacy Policy is intended to limit any legal defenses or objections that you may have to a third party, including a government, request to disclose your information.
+          </p>
+          <p id="privacy_titles">Non-Private or Non-Personal Information: </p>
+          <p id="privacy">We may share or disclose your non-private, aggregated or otherwise non-personal information, such as your public user profile information.
+          </p>
+          <p id="privacy_titles">Changes to this Policy </p>
+          <p id="privacy">We may revise this Privacy Policy from time to time. The most current version of the policy will govern our use of your information and will always be at https://captionz.herokuapp.com/legal/privacypolicy. If we make a change to this policy that, in our sole discretion, is material, we will update https://captionz.herokuapp.com/legal/privacypolicy. By continuing to access or use the Services after those changes become effective, you agree to be bound by the revised Privacy Policy.
+          </p>
+          <br>
+          <p id="privacy_titles">Effective: 23rd September 2017 </p>
+
+				</div>
+			</td>
+		</table>
+	</div>
+	<div id="sub_content"></div>
+  </td>
+</table>  
+</body>
+<footer>
+  <p>Captionz! is an applet created by www.tannhauser.ch - Contact: <a href="mailto:info@tannhauser.ch">
+  info@tannhauser.ch</a>. - <a href="{{legal}}">Legal</a></p>
+</footer> 
+
+</html>

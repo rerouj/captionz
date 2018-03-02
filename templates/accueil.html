@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>{{titre}}</title>
+  
+  
+  
+  <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" type="text/css">
+
+  
+</head>
+
+<body>
+  <table class="main_frame" align="center" width="600px" margin-top="0px">
+  <td>
+    <table width="600px">
+      <td>
+        <div id="title">
+          <h1><img src="/static/img/caption_logo.png"></h1>
+          <p id="title_sub">captionz.herokuapp.com</p>
+        </div>
+      </td>
+      <td><div id="coin" align="center"><a href="{{link}}" target="_blank">Caption it!</a></div></td>
+    </table>
+    <div id="about_title">
+		<table>
+			<td width="297px"><h2>About</h2></td>
+			<td><h2>Stats</h2></td>
+		</table>
+    </div>
+    <div id="about_title_content">
+    	<table>
+    		<td>
+    			<p id="about_content_p1">{{about}}</p>
+    		</td>
+    		<td>
+    			<p id="about_content_p2">{{stat}}</p>
+    		</td>
+    	</table>
+	</div>
+	<div id="main_content">
+    <p id="big_title">{{titre}}</p>
+		<table>
+			<td>
+				<div id="how_div">
+					<h2>How ?</h2>
+					<p id="how_text"> 3. If you'r ready, just push the button! log to your instagram account and get your captions info. </p>
+				</div>
+			</td>
+			<td>
+				<div id="coin" align="center"><a href="{{link}}" target="_blank">Caption it!</a></div>
+			</td>
+		</table>
+	</div>
+	<div id="sub_content"></div>
+  </td>
+</table>  
+</body>
+   <footer>
+  <p>Captionz! is an applet created by www.tannhauser.ch - Contact: <a href="mailto:info@tannhauser.ch">
+  info@tannhauser.ch</a>. - <a href="{{legal}}">Legal</a></p>
+</footer> 
+</html>

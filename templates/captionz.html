@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta name="viewport" id="viewport" content="width=device-width,user-scalable=yes,initial-scale=‌​1" />
+  <title>{{titre}}</title>
+  
+  <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" type="text/css">
+  
+</head>
+
+<body>
+  <table class="main_frame" align="center" width="600px" margin-top="0px">
+  <td>
+	<table width="600px">
+      <td>
+        <div id="title">
+          <h1><img src="/static/img/caption_logo.png"></h1>
+          <p id="title_sub">captionz.herokuapp.com</p>
+        </div>
+      </td>
+      <td width="300px">
+      	<p id="sharing_text">Share captionz all over the world!</p>
+		<!-- I got these buttons from simplesharebuttons.com -->
+		<div id="share-buttons">
+		 
+		    <!-- Facebook -->
+		    <a href="http://www.facebook.com/sharer.php?u=https://captionz.herokuapp.com" target="_blank">
+		        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+		    </a>
+		    
+		    <!-- Google+ -->
+		    <a href="https://plus.google.com/share?url=https://captionz.herokuapp.com" target="_blank">
+		        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+		    </a>
+		    
+		    <!-- LinkedIn -->
+		    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://captionz.herokuapp.com" target="_blank">
+		        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+		    </a>
+		     
+		    <!-- Twitter -->
+		    <a href="https://twitter.com/share?url=https://captionz.herokuapp.com&amp;text=Captionz&amp;hashtags=Captionz!" target="_blank">
+		        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+		    </a>
+      	</div>
+  	  </td>
+    </table>    <div id="about_title">
+		<table>
+			<td width="297px"><h2>About</h2></td>
+			<td><h2>Stats</h2></td>
+		</table>
+    </div>
+    <div id="about_title_content">
+    	<table>
+    		<td>
+    			<p id="about_content_p1">{{about}}</p>
+    		</td>
+    		<td>
+    			<p id="about_content_p2">{{stat}}</p>
+    		</td>
+    	</table>
+	</div>
+	<div id="main_content">
+		<table width="600px">
+			<tr height="30px">
+				<td width="125px"><p id="stat_title">{{titre1}}</p></td>
+				<td width="125px"><p id="stat_title">{{titre2}}</p></td>
+				<td width="125px"><p id="stat_title">{{titre3}}</p></td>
+				<td width="125px"><p id="stat_title">{{titre4}}</p></td>
+			</tr>
+			<tr>
+				<td width="125px"><p id="stat">{{caption_num}}</p></td>
+				<td width="125px"><p id="stat">{{len_words}}</p></td>
+				<td width="125px"><p id="stat">{{len_uniq_words}}</p></td>
+				<td width="125px"><p id="stat">{{len_hashtags}}</p></td>
+			</tr>
+		</table>
+	</div>
+	<div id="sub_content">
+		<table width="600px">
+			<tr>
+				<td align="left">
+					<p id="sub_title">{{titre5}}</p>
+				</td>
+			</tr>
+		</table>
+		<table width="600px" class="freq_table">
+			<tr>
+				{% if freq_table[0] == 1 %}
+				<td align="left">
+					{% for num in range(0,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(0,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+
+				{% elif freq_table[0] == 2 %}
+				<td align="left">
+					{% for num in range(0,10) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(0,10) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>				
+				<td align="left">
+					{% for num in range(10,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(10,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+
+				{% elif freq_table[0] == 3 %}
+				<td align="left">
+					{% for num in range(0,10) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(0,10) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>				
+				<td align="left">
+					{% for num in range(10,20) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(10,20) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(20,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(20,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+
+				{% elif freq_table[0] == 4 %}
+				<td align="left">
+					{% for num in range(0,10) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(0,10) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>				
+				<td align="left">
+					{% for num in range(10,20) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(10,20) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(20,30) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(20,30) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(30,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(30,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+				{% elif freq_table[0] == 5 %}
+				<td align="left">
+					{% for num in range(0,10) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(0,10) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>				
+				<td align="left">
+					{% for num in range(10,20) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(10,20) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(20,30) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(20,30) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(30,40) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(30,40) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left">
+					{% for num in range(40,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][0]}}</p>
+					{% endfor %}
+				</td>
+				<td align="left" class='freq_table'>
+					{% for num in range(40,freq_table[1]) %}
+					<p id="sub_content_title">{{word_freq[num][1]}}</p>
+					{% endfor %}
+				</td>
+				{% endif %}
+
+			</tr>
+		</table>
+	</div>
+  </td>
+</table>  
+</body>
+   <footer>
+  <p>Captionz! is an applet created by www.tannhauser.ch - Contact: <a href="mailto:info@tannhauser.ch">
+  info@tannhauser.ch</a>. - <a href="{{legal}}">Legal</a></p>
+</footer> 
+
+</html>

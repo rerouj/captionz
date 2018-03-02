@@ -1,0 +1,303 @@
+body{
+  background-color: #000000;
+  text-align:center;
+  font-size: 100%;
+}
+footer{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 12px;
+}
+
+footer a:link {
+  font-family: "Helvetica", Helvetica, Sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+a:hover {
+  font-family: "Helvetica", Helvetica, Sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+a:visited {
+  font-family: "Helvetica", Helvetica, Sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+html{
+  font-size: 100%;
+}
+div#title{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  margin-top: 20px;
+  text-align:left;
+  font-size: 33px;
+  width:250px;
+  height:240px;
+}
+p#title_sub{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  width: 100px;
+  text-align:center;
+  margin-right: 1px;
+  margin-left: 45px;
+  font-size: 11px;
+
+}
+p#big_title{
+  margin: 0px;
+  padding-bottom: 20px;
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 140px;
+  border-bottom: solid 1px #FFFFFF;
+}
+
+div#about_title{
+  text-align:left;
+  width: 600px;
+  height: 30px;
+}
+div#about_title_content{
+  width: 600px;
+  vertical-align: top;
+}
+div#main_content{
+  text-align: center;
+  border-top: solid 1px #FFFFFF;
+  border-bottom: solid 1px #FFFFFF;
+  width: 600px;
+}
+td#test{
+  font-size: 50px;
+}
+p#stat{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+p#stat_title{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+p#how_text{
+  width: 290px;
+  margin-right: 5px;
+}
+div#coin {
+  margin-top: 15px;
+  margin-left: 35px;
+  border : solid 1px #FFFFFF;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  background: #FFFFFF;
+  width: 220px;
+  height: 50px; 
+}
+
+div#coin a:link{
+  margin-top: 0px;
+  text-align: center; 
+  font-family: "Helvetica", Helvetica, Sans-serif;
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display:inline-block;
+  padding: 15px 40px
+}
+div#coin a:visited{
+  margin-top: 0px;
+  text-align: center; 
+  font-family: "Helvetica", Helvetica, Sans-serif;
+  color: #000000;
+  font-size: 25px;
+  text-decoration: none;
+  display:inline-block;
+  padding: 15px 40px
+}
+div#coin a:hover{
+  margin-top: 0px;
+  text-align: center; 
+  font-family: "Helvetica", Helvetica, Sans-serif;
+  color: #6600ff;
+  font-size: 25px;
+  text-decoration: none;
+  display:inline-block;
+}
+div#background{
+  
+  height: 10px;
+  width: 100px;
+  background-color: #000000;
+  border
+}
+div#sub_content{
+  width: 600px;
+  text-align: center;
+}
+
+p#sub_content_title{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 15px;
+  margin-top: 0px;
+  height: 10px;
+}
+
+p#sub_title{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+p{
+  color:#FFFFFF;
+}
+
+p#about_content_p1{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  vertical-align: top;
+  width: 289px;
+  height: 195px;
+  font-size: 12px;
+  text-align: justify;
+  color:#FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+p#about_content_p2{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  height: 195px;
+  font-size: 12px;
+  text-align: justify;
+  color:#FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+p#how_text{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  color:#FFFFFF;
+}
+p#privacy_titles{
+  text-align: left;
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+ p#privacy{
+  text-align: justify;
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 12px;
+ }
+
+h1{
+  color:#FFFFFF;
+  margin-top:0px;
+  height: 160px;
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+}
+
+h2{
+  text-align: left;
+  color:#FFFFFF;
+  margin-top:0px;
+  margin-bottom: 0px;
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 19px;
+  text-decoration: underline;
+}
+h3{
+  text-align: center;
+  color:#FFFFFF;
+  margin-top:13px;
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 19px;
+}
+h4{
+  color:#FFFFFF;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+}
+h5{
+  font-size:15px;
+  color:#FFFFFF;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+}
+
+div{
+}
+p#sharing_text{
+  font-family:'open_sansregular', Helvetica, Sans-serif;
+  font-size: 12px;
+}
+#share-buttons img {
+  width: 30px;
+  padding: 0px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+}
+
+#share-buttons a:link{
+  text-decoration: none;
+  width: 30px;
+  padding: 0px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+}
+#share-buttons a:hover{
+  text-decoration: none;
+  width: 30px;
+  padding: 0px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+}
+#share-buttons a:visited{
+  text-decoration: none;
+  width: 30px;
+  padding: 0px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+}
+
+table.freq_table{
+  vertical-align: top;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

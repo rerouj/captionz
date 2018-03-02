@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+		<link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" type="text/css" />
+
+
+                <title>{{titre}}</title>
+            </head>
+        
+            <body>
+                <h1></h1>
+                    <div class="word_cloud">
+                        <p>{{hashtag}}</p>
+                        <p></p>
+                        <p>{{recent_media}}</p>
+                        <p></p>
+                        <p>{% include 'fig_test2.html' %}</p>
+                        <p></p>
+                        {% for capt in captions_exemple %}
+                        <p>{{capt[0]}}</p>
+                        {% endfor %}
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p>{{number_captions}}</p>
+
+
+                    </div>
+            </body>
+        </html>

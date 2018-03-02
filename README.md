@@ -1,4 +1,4 @@
-# captionz
+# Captionz
 
 http://captionz.heroku.app
 
